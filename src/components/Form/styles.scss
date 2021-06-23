@@ -1,0 +1,28 @@
+.form-container {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+
+  input {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+    border: 1px solid #181616;
+  }
+
+  button {
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    border: 0;
+    background: #181616;
+    color: #fff;
+
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(2);
+    }
+  }
+}
