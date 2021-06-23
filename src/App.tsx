@@ -1,11 +1,16 @@
 import React from 'react'
 
+import './App.scss'
+
 import { Layout } from 'components/Layout'
+import { Header } from 'components/Header'
 
 function App() {
   return (
     <Layout>
-      <h1>hello world</h1>
+      <div className="container">
+        <Header />
+      </div>
     </Layout>
   )
 }
