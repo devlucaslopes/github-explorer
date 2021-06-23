@@ -5,6 +5,7 @@ import './App.scss'
 import { Layout } from 'components/Layout'
 import { Header } from 'components/Header'
 import { Form } from 'components/Form'
+import { User } from 'components/User'
 
 function App() {
   return (
@@ -13,6 +14,12 @@ function App() {
         <Header />
 
         <Form />
+
+        {/* <User /> */}
+
+        <p className="not-found">
+          Nenhum usuário foi encontrado, tente novamente.
+        </p>
       </div>
     </Layout>
   )
