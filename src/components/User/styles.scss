@@ -1,0 +1,63 @@
+.user-container {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #181616;
+}
+
+.user-profile {
+  display: flex;
+  align-items: flex-end;
+
+  img {
+    width: 64px;
+    height: 64px;
+    border-radius: 0.5rem;
+  }
+
+  > div {
+    margin-left: 1rem;
+
+    span {
+      font-size: 2rem;
+      font-weight: 600;
+
+      a {
+        font-size: 1rem;
+        margin-left: 1rem;
+        font-weight: 500;
+      }
+    }
+
+    p {
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+      color: #8c8b8b
+    }
+  }
+}
+
+.user-stats {
+  margin-top: 2rem;
+
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  li {
+    span {
+      display: block;
+    }
+
+    span.total {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    span.stats {
+      font-size: 1.5rem;
+    }
+  }
+}
