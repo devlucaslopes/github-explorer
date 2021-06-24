@@ -1,44 +1,48 @@
 import React from 'react'
 
+import { UserData } from 'App'
+
 import './styles.scss'
 
-export const User = () => (
+export const User = ({
+  name,
+  bio,
+  repositories,
+  following,
+  followers
+}: UserData) => (
   <div className="user-container">
     <section className="user-profile">
       <img
         src="https://avatars.githubusercontent.com/u/20402983?v=4"
-        alt="username"
+        alt={name}
       />
 
       <div>
-        <span>
-          Lucas Lopes
-          <a href="#">Ver perfil</a>
-        </span>
-        <p>
-          Apaixonado por tecnologia e o impacto que ela causa na vida das
-          pessoas.
-        </p>
+        <h1>{name}</h1>
+        <p>{bio}</p>
       </div>
     </section>
 
     <section className="user-stats">
       <ul>
         <li>
-          <span className="total">36</span>
+          <span className="total" aria-label="seguidores">
+            {followers}
+          </span>
           <span className="stats">Seguidores</span>
         </li>
         <li>
-          <span className="total">36</span>
+          <span className="total" aria-label="seguindo">
+            {following}
+          </span>
           <span className="stats">Seguindo</span>
         </li>
         <li>
-          <span className="total">36</span>
+          <span className="total" aria-label="projetos">
+            {repositories}
+          </span>
           <span className="stats">Projetos</span>
-        </li>
-        <li>
-          <span className="total">36</span>
-          <span className="stats">Estrelas</span>
         </li>
       </ul>
     </section>
